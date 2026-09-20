@@ -216,3 +216,30 @@ footer {
         column-count: 2;
     }
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+    .masonry-container {
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    .masonry-item {
+        margin-bottom: 16px;
+    }
+
+    /* Traitement adaptatif pour le tactile (le titre se place sous la photo) */
+    .overlay {
+        position: relative;
+        background: var(--bg-card);
+        padding: 12px 15px;
+        opacity: 1;
+        transform: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .overlay span {
+        font-size: 0.95rem;
+    }
+}
