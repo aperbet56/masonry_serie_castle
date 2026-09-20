@@ -208,3 +208,11 @@ footer {
     font-style: italic;
     opacity: 0.7;
 }
+
+/**** Rsponsive design version tablette ****/
+
+@media screen and (max-width: 991px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
