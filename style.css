@@ -1,0 +1,210 @@
+/**** Importation des polices ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/**** Variables css ****/
+:root {
+    --bg-main: #0b132b;
+    --bg-card: #1c2541;
+    --text-primary: #ffffff;
+    --text-secondary: #8c9cb6;
+    --accent-gold: #e0a96d;
+    --accent-glow: rgba(224, 169, 109, 0.2);
+    --font-title: "Cinzel", serif;
+    --font-text: "Inter", sans-serif;
+    --radius-lg: 16px;
+    --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/**** Reset  ****/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*** html, body ****/
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg-main);
+    overflow-x: hidden;
+}
+
+/**** body ****/
+
+body {
+    font-family: var(--font-text);
+    color: var(--text-primary);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main {
+    /* Gère le padding global directement ici, de manière fluide */
+    padding: clamp(15px, 3vw, 40px) clamp(10px, 4vw, 20px);
+}
+
+header,
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+/**** header ****/
+
+header {
+    margin-bottom: clamp(30px, 6vw, 50px);
+    padding-bottom: 25px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-gold);
+    border-radius: 2px;
+}
+
+header h1 {
+    font-family: var(--font-title);
+    font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: clamp(1px, 0.5vw, 4px);
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff 0%, var(--accent-gold) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-style: italic;
+    padding-inline: 10px;
+}
+
+/**** main et masonry ****/
+
+main {
+    flex-grow: 1;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main,
+.masory-container,
+.masonry-item,
+.masonry-item img,
+.footer-content {
+    width: 100%;
+}
+
+.masonry-container {
+    column-count: 3;
+    column-gap: clamp(15px, 2.5vw, 24px);
+}
+
+.masonry-item {
+    background-color: var(--bg-card);
+    display: inline-block;
+    margin-bottom: clamp(15px, 2.5vw, 24px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    break-inside: avoid;
+    transition: var(--transition);
+    will-change: transform, box-shadow;
+}
+
+.masonry-item img {
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: var(--transition);
+    will-change: transform;
+}
+
+/**** HOVER ET LÉGENDES (PC uniquement) ****/
+
+@media (hover: hover) {
+    .masonry-item:hover {
+        transform: translateY(-5px);
+        border-color: rgba(224, 169, 109, 0.3);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
+    }
+
+    .masonry-item:hover img {
+        transform: scale(1.02);
+    }
+
+    .overlay {
+        position: absolute;
+        inset: auto 0 0 0;
+        padding: 20px 15px;
+        background: linear-gradient(to top, rgba(11, 19, 43, 0.95) 0%, rgba(11, 19, 43, 0.3) 80%, transparent 100%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        opacity: 0;
+        transform: translateY(10px);
+        transition: var(--transition);
+    }
+
+    .masonry-item:hover .overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay h2 {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    font-weight: 600;
+    color: var(--accent-gold);
+    display: block;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/**** footer ****/
+
+footer {
+    background-color: #060b19;
+    color: var(--text-primary);
+    padding-block: 30px;
+    margin-top: clamp(40px, 8vw, 60px);
+    border-top: 2px solid var(--accent-gold);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.footer-content {
+    padding-inline: 15px;
+}
+
+.footer-sub {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 8px;
+    font-style: italic;
+    opacity: 0.7;
+}
