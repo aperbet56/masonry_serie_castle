@@ -20,7 +20,7 @@ Ce projet dispose de nombreuses fonctionnalités :
 
 ## 📸 Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/masonry_serie_castle/
 
 ## 🛠️ Projet développé avec
 
