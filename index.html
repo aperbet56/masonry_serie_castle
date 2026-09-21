@@ -163,6 +163,17 @@
           </div>
         </li>
       </ul>
+
+      <!-- Structure de la lightbox -->
+      <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+        <button class="lightbox-close" aria-label="Fermer la galerie">
+          &times;
+        </button>
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="" />
+          <h2 id="lightbox-caption"></h2>
+        </div>
+      </div>
     </main>
     <!-- Fin du main -->
 
@@ -180,5 +191,8 @@
       </div>
     </footer>
     <!-- Fin du footer -->
+
+    <!-- Importation du fichier JS -->
+    <script src="script.js"></script>
   </body>
 </html>
