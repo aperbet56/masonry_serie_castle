@@ -41,3 +41,11 @@ Lien vers le projet :
 - Manipulation dynamique du DOM.
 - Gestionnaires d'événements (`click`, `keydown`).
 - Nettoyage asynchrone des attributs (`setTimeout`) pour éviter les flashs visuels lors des animations.
+
+## 📂 Structure du projet
+
+```text
+├── index.html          # Structure HTML5 sémantique
+├── style.css           # Styles de la grille et de la lightbox
+└── script.js           # Logique JavaScript d'ouverture/fermeture et gestion du clavier
+```
