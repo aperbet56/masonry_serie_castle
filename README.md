@@ -1,5 +1,7 @@
 ## 🕵️‍♂️ CASTLE SERIE TV - GALERIE MASONRY & LIGHTBOX
 
+![Design preview for the project](./img/preview.png)
+
 ## 🚀 Le challenge
 
 Une galerie photo interactive de type **Maçonnerie (style Pinterest)** dédiée à la série télévisée policière **Castle**. Le projet arbore un design soigné.
