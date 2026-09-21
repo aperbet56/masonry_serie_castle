@@ -4,7 +4,7 @@
 
 ## 🚀 Le challenge
 
-Une galerie photo interactive de type **Maçonnerie (style Pinterest)** dédiée à la série télévisée policière **Castle**. Le projet arbore un design soigné.
+Une galerie photo interactive de type **Masonry (style Pinterest)** dédiée à la série télévisée policière **Castle**. Le projet arbore un design soigné.
 
 Il intègre une présentation sémantique de la série et une **lightbox (fenêtre pop-up)** entièrement accessible pour visualiser les images en grand format.
 
