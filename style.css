@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /**** Variables css ****/
+
 :root {
     --bg-main: #0b132b;
     --bg-card: #1c2541;
@@ -46,7 +47,6 @@ body {
     width: 100%;
     max-width: 100%;
     background-color: var(--bg-main);
-    overflow-x: hidden;
 }
 
 /**** body ****/
@@ -62,7 +62,6 @@ body {
 
 header,
 main {
-    /* Gère le padding global directement ici, de manière fluide */
     padding: clamp(15px, 3vw, 40px) clamp(10px, 4vw, 20px);
 }
 
@@ -119,7 +118,6 @@ main {
     flex-grow: 1;
     max-width: 1240px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 main,
