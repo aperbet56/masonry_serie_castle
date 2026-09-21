@@ -4,6 +4,7 @@ const lightboxCaption = document.querySelector("#lightbox-caption");
 const lightboxClose = document.querySelector(".lightbox-close");
 const masonryItems = document.querySelectorAll(".masonry-item");
 const bodyElement = document.querySelector("body");
+const copyrightYear = document.querySelector(".year");
 
 // Ouverture de la Lightbox au clic sur un élément de la grille
 masonryItems.forEach((item) => {
@@ -60,3 +61,13 @@ document.addEventListener("keydown", (e) => {
     closeLightbox();
   }
 });
+
+// Déclaration de la fonction getCurrentYear qui va permettre l'affichage de l'année dans le footer
+const getCurrentYear = () => {
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  copyrightYear.textContent = `${currentYear}`;
+};
+
+// Appel de la fonction getCurrentYear()
+getCurrentYear();
