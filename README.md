@@ -9,7 +9,7 @@ Il intègre une présentation sémantique de la série et une **lightbox (fenêt
 Ce projet dispose de nombreuses fonctionnalités :
 
 - **Grille Masonry Native** : Agencement fluide et responsive géré à 100% en CSS (`column-count`), sans espaces vides.
-- **Thème "Bureau d'enquêteur"** : Palette colorimétrique élégante ( bleu nuit et touches d'or).
+- **Thème** : Palette colorimétrique élégante ( bleu nuit et touches d'or).
 - **Lightbox interactive** : Ouverture des images au clic avec affichage dynamique du titre de l'overlay.
 - **Expérience Utilisateur & Accessibilité (A11y)** :
   - Blocage du défilement de la page en arrière-plan lorsque la lightbox est ouverte.
@@ -49,3 +49,9 @@ Lien vers le projet :
 ├── style.css           # Styles de la grille et de la lightbox
 └── script.js           # Logique JavaScript d'ouverture/fermeture et gestion du clavier
 ```
+
+---
+
+## 📝 Licence
+
+Ce projet est réalisé dans un but éducatif et de démonstration de compétences en développement Front-End. Les images et références liées à la série _Castle_ appartiennent à leurs producteurs respectifs.
