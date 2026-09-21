@@ -21,3 +21,23 @@ Ce projet dispose de nombreuses fonctionnalités :
 ## 📸 Démonstration
 
 Lien vers le projet :
+
+## 🛠️ Projet développé avec
+
+- Utilisation des balises sémantiques HTML5
+- CSS3
+- Flexbox
+- Animations css (transition, @keyframes)
+- `column-count` & `column-gap` pour l'effet maçonnerie fluide.
+- `display: inline-block` sur les items pour éviter les coupures de blocs entre les colonnes.
+- Page web responsive
+- Desktop first
+- Commentaires HTML
+- Commentaires CSS
+- Importation d'un normaliseur : le fichier normalize
+- Importation des polices "Cinzel" et "Inter"
+- JavaScript (ES6)
+- Code JavaScript commenté
+- Manipulation dynamique du DOM.
+- Gestionnaires d'événements (`click`, `keydown`).
+- Nettoyage asynchrone des attributs (`setTimeout`) pour éviter les flashs visuels lors des animations.
